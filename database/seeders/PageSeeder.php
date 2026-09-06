@@ -20,7 +20,7 @@ class PageSeeder extends Seeder
                 'icon' => 'LayoutDashboard',
                 'group_name' => 'Pilotage',
                 'is_active' => true,
-                'permission_name' => 'dashboard.view',
+
             ],
             [
                 'name' => 'agenda',
@@ -30,7 +30,7 @@ class PageSeeder extends Seeder
                 'icon' => 'Calendar',
                 'group_name' => 'Pilotage',
                 'is_active' => true,
-                'permission_name' => 'agenda.view',
+
             ],
             // Clinique
             [
@@ -41,7 +41,7 @@ class PageSeeder extends Seeder
                 'icon' => 'Users',
                 'group_name' => 'Clinique',
                 'is_active' => true,
-                'permission_name' => 'patients.view',
+
             ],
             [
                 'name' => 'odontogramme',
@@ -51,7 +51,7 @@ class PageSeeder extends Seeder
                 'icon' => 'Activity',
                 'group_name' => 'Clinique',
                 'is_active' => true,
-                'permission_name' => 'odontogramme.view',
+
             ],
             [
                 'name' => 'consultations',
@@ -61,7 +61,7 @@ class PageSeeder extends Seeder
                 'icon' => 'Stethoscope',
                 'group_name' => 'Clinique',
                 'is_active' => true,
-                'permission_name' => 'consultations.view',
+
             ],
             [
                 'name' => 'traitements',
@@ -71,7 +71,7 @@ class PageSeeder extends Seeder
                 'icon' => 'ClipboardList',
                 'group_name' => 'Clinique',
                 'is_active' => true,
-                'permission_name' => 'traitements.view',
+
             ],
             [
                 'name' => 'laboratoire',
@@ -81,7 +81,7 @@ class PageSeeder extends Seeder
                 'icon' => 'FlaskConical',
                 'group_name' => 'Clinique',
                 'is_active' => true,
-                'permission_name' => 'laboratoire.view',
+
             ],
             // Finance
             [
@@ -92,7 +92,7 @@ class PageSeeder extends Seeder
                 'icon' => 'FileText',
                 'group_name' => 'Finance',
                 'is_active' => true,
-                'permission_name' => 'facturation.view',
+
             ],
             [
                 'name' => 'paiements',
@@ -102,7 +102,7 @@ class PageSeeder extends Seeder
                 'icon' => 'CreditCard',
                 'group_name' => 'Finance',
                 'is_active' => true,
-                'permission_name' => 'paiements.view',
+
             ],
             [
                 'name' => 'devis',
@@ -112,7 +112,7 @@ class PageSeeder extends Seeder
                 'icon' => 'FileSpreadsheet',
                 'group_name' => 'Finance',
                 'is_active' => true,
-                'permission_name' => 'devis.view',
+
             ],
             // Gestion
             [
@@ -123,7 +123,7 @@ class PageSeeder extends Seeder
                 'icon' => 'Package',
                 'group_name' => 'Gestion',
                 'is_active' => true,
-                'permission_name' => 'stock.view',
+
             ],
             [
                 'name' => 'employes',
@@ -133,7 +133,7 @@ class PageSeeder extends Seeder
                 'icon' => 'UserCog',
                 'group_name' => 'Gestion',
                 'is_active' => true,
-                'permission_name' => 'employes.view',
+
             ],
             [
                 'name' => 'rapports',
@@ -143,7 +143,7 @@ class PageSeeder extends Seeder
                 'icon' => 'BarChart3',
                 'group_name' => 'Gestion',
                 'is_active' => true,
-                'permission_name' => 'rapports.view',
+
             ],
             [
                 'name' => 'crm',
@@ -153,7 +153,7 @@ class PageSeeder extends Seeder
                 'icon' => 'Heart',
                 'group_name' => 'Gestion',
                 'is_active' => true,
-                'permission_name' => 'crm.view',
+
             ],
             [
                 'name' => 'notifications',
@@ -163,7 +163,7 @@ class PageSeeder extends Seeder
                 'icon' => 'Bell',
                 'group_name' => 'Gestion',
                 'is_active' => true,
-                'permission_name' => 'notifications.view',
+
             ],
             [
                 'name' => 'parametres',
@@ -173,7 +173,7 @@ class PageSeeder extends Seeder
                 'icon' => 'Settings',
                 'group_name' => 'Gestion',
                 'is_active' => true,
-                'permission_name' => 'parametres.view',
+
             ],
             // Administration
             [
@@ -184,18 +184,9 @@ class PageSeeder extends Seeder
                 'icon' => 'Shield',
                 'group_name' => 'Administration',
                 'is_active' => true,
-                'permission_name' => 'roles.view',
+
             ],
-            [
-                'name' => 'admin_permissions',
-                'display_name' => 'Permissions',
-                'path' => '/admin/permissions',
-                'component' => 'AdminPermissions',
-                'icon' => 'Key',
-                'group_name' => 'Administration',
-                'is_active' => true,
-                'permission_name' => 'permissions.view',
-            ],
+
             [
                 'name' => 'admin_pages',
                 'display_name' => 'Pages',
@@ -204,18 +195,9 @@ class PageSeeder extends Seeder
                 'icon' => 'Layout',
                 'group_name' => 'Administration',
                 'is_active' => true,
-                'permission_name' => 'pages.view',
+
             ],
-            [
-                'name' => 'admin_role_permissions',
-                'display_name' => 'Affectation Rôles/Permissions',
-                'path' => '/admin/role-permissions',
-                'component' => 'AdminRolePermissions',
-                'icon' => 'Shield',
-                'group_name' => 'Administration',
-                'is_active' => true,
-                'permission_name' => 'role_permissions.view',
-            ],
+
             [
                 'name' => 'admin_role_pages',
                 'display_name' => 'Affectation Rôles/Pages',
@@ -224,22 +206,21 @@ class PageSeeder extends Seeder
                 'icon' => 'Layout',
                 'group_name' => 'Administration',
                 'is_active' => true,
-                'permission_name' => 'role_pages.view',
+
             ],
         ];
 
         foreach ($pages as $pageData) {
-            $permissionName = $pageData['permission_name'];
-            unset($pageData['permission_name']);
+
 
             $page = Page::create($pageData);
 
             // Associate with the corresponding permission and update permission's page_id
-            $permission = Permission::where('name', $permissionName)->first();
+            /*permission = Permission::where('name', $permissionName)->first();
             if ($permission) {
                 $permission->update(['page_id' => $page->id]);
                 $page->permissions()->attach($permission->id);
-            }
+            }*/
         }
     }
 }

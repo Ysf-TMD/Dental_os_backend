@@ -14,7 +14,7 @@ class DatabaseSeeder extends Seeder
         // RBAC Seeders
         $this->call([
             RoleSeeder::class,
-            PermissionSeeder::class,
+            //PermissionSeeder::class,
             PageSeeder::class,
             RolePermissionSeeder::class,
             RolePageSeeder::class,

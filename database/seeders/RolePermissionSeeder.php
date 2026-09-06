@@ -11,7 +11,7 @@ class RolePermissionSeeder extends Seeder
     public function run(): void
     {
         $roles = Role::all()->keyBy('name');
-        $permissions = Permission::all()->keyBy('name');
+      /*  $permissions = Permission::all()->keyBy('name');
 
         $this->command->info('Found ' . $roles->count() . ' roles');
         $this->command->info('Found ' . $permissions->count() . ' permissions');
@@ -25,7 +25,7 @@ class RolePermissionSeeder extends Seeder
         // Admin - All except admin specific
         if ($roles->has('admin')) {
             $adminPermissions = $permissions->filter(function ($permission) {
-                return !str_contains($permission->name, 'roles.') && 
+                return !str_contains($permission->name, 'roles.') &&
                        !str_contains($permission->name, 'permissions.');
             });
             $roles['admin']->permissions()->sync($adminPermissions->pluck('id'));
@@ -94,6 +94,6 @@ class RolePermissionSeeder extends Seeder
             });
             $roles['viewer']->permissions()->sync($viewerPermissions->pluck('id'));
             $this->command->info('Assigned ' . $viewerPermissions->count() . ' permissions to viewer');
-        }
+        }*/
     }
 }
